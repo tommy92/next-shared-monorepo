@@ -8,3 +8,5 @@ export const HomePage = {
     getServerSideProps: homeGetServerSideProps,
   },
 };
+
+export { default as AppPage } from "./src/views/App";
