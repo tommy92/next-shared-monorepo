@@ -12,6 +12,7 @@
     "next-transpile-modules": "^4.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "sass": "^1.27.0",
     "shared": "^1.0.0"
   }
 }

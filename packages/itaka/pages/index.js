@@ -1,12 +1,12 @@
-import { HomePage, HomeServerSideProps } from "shared";
+import { HomePage } from "shared";
 
 const Home = ({ data }) => {
-  const { count, results } = data;
+  const { results } = data;
 
   return (
     <>
       <h1>Itaka</h1>
-      <HomePage />
+      <HomePage.View />
 
       <ul>
         {results.map((item) => (
@@ -17,5 +17,5 @@ const Home = ({ data }) => {
   );
 };
 
-export const getServerSideProps = HomeServerSideProps;
+export const getServerSideProps = HomePage.Utils.getServerSideProps;
 export default Home;

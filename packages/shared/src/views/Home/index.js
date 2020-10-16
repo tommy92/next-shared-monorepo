@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import styles from "./styles.module.scss";
+import Button from "../../components/Button";
 
 const Home = () => {
   const [count, setCount] = useState(0);
@@ -8,12 +10,10 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className={styles.container}>
       <span>{count}</span>
-      <button type="button" onClick={() => handleCountChange()}>
-        Increment counter
-      </button>
-    </>
+      <Button onClick={() => handleCountChange()}>Increment counter</Button>
+    </div>
   );
 };
 
