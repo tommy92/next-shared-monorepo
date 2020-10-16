@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import Button from "../../components/Button";
 
 const Home = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
 
   const handleCountChange = () => {
     setCount((prev) => prev + 1);
